@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        img {
+            display: block;
+            opacity: 0.2;
+            transform: translateY(200px);
+            transition: all ease 2s;
+        }
+
+        .active {
+            opacity: 1;
+            transform: translateY(0);
+
+        }
+
+        div {
+            height: 200px;
+            width: 200px;
+            margin: 40px auto;
+            background: gold;
+        }
+
+        article {
+            height: 120vh;
+        }
+    </style>
+</head>
+
+<body>
+    <article></article>
+    <div data-aos="fade-up" data-aos-duration="3000"></div>
+    <div data-aos="fade-down" data-aos-duration="3000"></div>
+    <div data-aos="fade-left" data-aos-duration="3000"></div>
+    <div></div>
+    <div></div>
+    <section>
+        <img src="https://unsplash.it/400" alt="">
+        <img src="https://unsplash.it/401" alt="">
+        <img src="https://unsplash.it/402" alt="">
+        <img src="https://unsplash.it/404" alt="">
+        <img src="https://unsplash.it/403" alt="">
+        <img src="https://unsplash.it/405" alt="">
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
